@@ -1,0 +1,3 @@
+[submodule "schematic/lbr/SparkFun-Eagle-Libraries"]
+	path = schematic/lbr/SparkFun-Eagle-Libraries
+	url = git@github.com:sparkfun/SparkFun-Eagle-Libraries.git

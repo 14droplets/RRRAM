@@ -491,6 +491,49 @@
 <text x="-6.985" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-6.985" y="-5.08" size="1.27" layer="27" font="vector">&gt;Value</text>
 </package>
+<package name="2X5-1.27MM-R">
+<description>&lt;h1&gt;1.27мм угловой сквозной разъем IDC на 10 пинов&lt;/h1&gt;
+
+&lt;p&gt;Удобно использовать для отладки&lt;/p&gt;
+
+&lt;p&gt;Можно купить вот тут &lt;a href="https://ru.aliexpress.com/item/32991807690.html"&gt;https://ru.aliexpress.com/item/32991807690.html&lt;/a&gt;&lt;/p&gt;</description>
+<rectangle x1="-2.74" y1="0.435" x2="-2.34" y2="0.835" layer="51"/>
+<rectangle x1="-2.74" y1="-0.835" x2="-2.34" y2="-0.435" layer="51"/>
+<rectangle x1="-1.47" y1="-0.835" x2="-1.07" y2="-0.435" layer="51"/>
+<rectangle x1="-1.47" y1="0.435" x2="-1.07" y2="0.835" layer="51"/>
+<rectangle x1="-0.2" y1="0.435" x2="0.2" y2="0.835" layer="51"/>
+<rectangle x1="-0.2" y1="-0.835" x2="0.2" y2="-0.435" layer="51"/>
+<rectangle x1="1.07" y1="0.435" x2="1.47" y2="0.835" layer="51"/>
+<rectangle x1="1.07" y1="-0.835" x2="1.47" y2="-0.435" layer="51"/>
+<rectangle x1="2.34" y1="-0.835" x2="2.74" y2="-0.435" layer="51"/>
+<rectangle x1="2.34" y1="0.435" x2="2.74" y2="0.835" layer="51"/>
+<text x="-7.62" y="8.255" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-6.985" y="-3.175" size="1.27" layer="27" font="vector">&gt;Value</text>
+<pad name="1" x="-2.54" y="-0.635" drill="0.6" shape="square" first="yes"/>
+<pad name="2" x="-2.54" y="0.635" drill="0.6"/>
+<pad name="3" x="-1.27" y="-0.635" drill="0.6"/>
+<pad name="4" x="-1.27" y="0.635" drill="0.6"/>
+<pad name="5" x="0" y="-0.635" drill="0.6"/>
+<pad name="6" x="0" y="0.635" drill="0.6"/>
+<pad name="7" x="1.27" y="-0.635" drill="0.6"/>
+<pad name="8" x="1.27" y="0.635" drill="0.6"/>
+<pad name="9" x="2.54" y="-0.635" drill="0.6"/>
+<pad name="10" x="2.54" y="0.635" drill="0.6"/>
+<wire x1="-6.275" y1="6.565" x2="6.275" y2="6.565" width="0.127" layer="21"/>
+<wire x1="-6.275" y1="1.665" x2="6.275" y2="1.665" width="0.127" layer="21"/>
+<wire x1="-5.425" y1="6.565" x2="-5.425" y2="1.665" width="0.127" layer="51"/>
+<wire x1="5.425" y1="6.565" x2="5.425" y2="1.665" width="0.127" layer="51"/>
+<rectangle x1="-2.74" y1="1.705" x2="-2.34" y2="6.105" layer="51"/>
+<wire x1="-6.275" y1="6.565" x2="-6.275" y2="1.665" width="0.127" layer="21"/>
+<wire x1="6.275" y1="6.565" x2="6.275" y2="1.665" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="6.565" x2="-1.2" y2="3.465" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="3.465" x2="1.2" y2="3.465" width="0.127" layer="51"/>
+<wire x1="1.2" y1="3.465" x2="1.2" y2="6.565" width="0.127" layer="51"/>
+<rectangle x1="-1.47" y1="1.705" x2="-1.07" y2="6.105" layer="51"/>
+<rectangle x1="-0.2" y1="1.705" x2="0.2" y2="6.105" layer="51"/>
+<rectangle x1="1.07" y1="1.705" x2="1.47" y2="6.105" layer="51"/>
+<rectangle x1="2.34" y1="1.705" x2="2.74" y2="6.105" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_10X2">
@@ -782,6 +825,23 @@
 </gates>
 <devices>
 <device name="" package="2X5-1.27MM-SMT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="1"/>
+<connect gate="G$1" pin="5V" pad="3"/>
+<connect gate="G$1" pin="DRX" pad="7"/>
+<connect gate="G$1" pin="DTX" pad="5"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="NRST" pad="10"/>
+<connect gate="G$1" pin="TCLK" pad="4"/>
+<connect gate="G$1" pin="TDI" pad="8"/>
+<connect gate="G$1" pin="TDO" pad="6"/>
+<connect gate="G$1" pin="TMS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2X5-1.27MM-R" package="2X5-1.27MM-R">
 <connects>
 <connect gate="G$1" pin="3.3V" pad="1"/>
 <connect gate="G$1" pin="5V" pad="3"/>
